@@ -1,0 +1,36 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bubbles {
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  height: auto;
+}
+
+.graphic {
+  z-index: 1;
+}
+
+.head {
+  z-index: 2;
+  position: absolute;
+  height: 750px;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
