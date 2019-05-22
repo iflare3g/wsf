@@ -5,7 +5,7 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default () => (
-  <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
+  <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
     <Navbar.Brand href="/">
       <img
         src="https://s3-eu-west-1.amazonaws.com/wood-sound-festival/LogoWood.svg"

@@ -63,6 +63,14 @@ body {
   max-width: 100%;
 }
 
+.bg-contacts {
+  background-image: url("https://mixtape.select-themes.com/wp-content/uploads/2017/04/contact-title-img.jpg");
+  background-position: center top;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 @media screen and (max-width: 480px) {
   .floating-wrapper {
     margin-top: 0px;
