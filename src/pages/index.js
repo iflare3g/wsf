@@ -5,11 +5,10 @@ import Countdown from "../components/countdown";
 import Navbar from "../components/navbar";
 
 export default () => (
-<React.Fragment>
-  <Navbar/>
-  <Layout>
-    <Floating/>
-    <Countdown/>
-  </Layout>
-</React.Fragment>
+  <React.Fragment>
+    <Layout>
+      <Floating />
+      <Countdown />
+    </Layout>
+  </React.Fragment>
 );
