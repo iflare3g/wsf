@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/layout";
-import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
