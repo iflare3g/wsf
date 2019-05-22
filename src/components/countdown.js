@@ -1,11 +1,11 @@
 import React from "react";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container'
-import Countdown from 'react-countdown-now';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Countdown from "react-countdown-now";
 
-const Completionist = () => <span>You are good to go!</span>;
-const renderer = ({ hours, minutes, seconds, completed }) => {
+const Completionist = () => <span>Time to have fun!</span>;
+const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
     // Render a completed state
     return <Completionist />;
@@ -19,31 +19,28 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
           </Col>
         </Row>
         <Row className="mt-5">
-          <Col sm="3" className="wsf-red px-lg-5">
-            <h1>{ hours }</h1>
-            <p className="font-weight-light">MESI</p>
-          </Col>
-          <Col sm="3" className="wsf-red px-lg-5">
-            <h1>{ minutes }</h1>
+          <Col sm="3" className="wsf-red">
+            <h1>{days}</h1>
             <p className="font-weight-light">GIORNI</p>
           </Col>
-          <Col sm="3" className="wsf-red px-lg-5">
-            <h1>{ seconds }</h1>
+          <Col sm="3" className="wsf-red">
+            <h1>{hours}</h1>
             <p className="font-weight-light">ORE</p>
           </Col>
-          <Col sm="3" className="wsf-red px-lg-5">
-            <h1>00</h1>
+          <Col sm="3" className="wsf-red">
+            <h1>{minutes}</h1>
             <p className="font-weight-light">MINUTI</p>
+          </Col>
+          <Col sm="3" className="wsf-red">
+            <h1>{seconds}</h1>
+            <p className="font-weight-light">SECONDI</p>
           </Col>
         </Row>
       </Container>
-    )
+    );
   }
 };
 
 export default () => (
-  <Countdown
-     date={ new Date("August 12, 2019 19:00:00") }
-     renderer={renderer}
- />
+  <Countdown date={new Date(2019, 7, 12, 19, 0, 0)} renderer={renderer} />
 );
