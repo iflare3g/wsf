@@ -1,3 +1,5 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, img {margin:0px; padding:0px; }
+
 html,
 body {
   width: 100vw;
@@ -14,49 +16,16 @@ body {
   overflow: hidden;
   position: absolute;
   height: auto;
-  min-height: 300px;
+  min-height: 500px;
   max-width: 100%;
 }
 
 .head {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   height: auto;
   max-width: 100%;
-  min-height: 100px;
-  margin-top: -100px;
-}
-
-.countdown {
-  min-height: 30px;
-  background-color: rgb(210, 131, 124);
-  padding: 30px;
-  position: absolute;
-  width: 660px;
-  border-radius: 15px;
-  top: 730px;
-  z-index: 2;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  text-transform: uppercase;
-  margin: auto;
-}
-
-@media (min-width: 376px) and (max-width: 450px) {
-  .countdown {
-    top: 230px!important;
-    padding: 15px;
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .countdown {
-    top: 200px;
-    padding: 15px;
-    width: 300px;
-  }
+  min-height: 50px;
 }
 
 @keyframes float {
@@ -69,4 +38,13 @@ body {
   100% {
     transform: translatey(0px);
   }
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.wsf-red {
+  color: rgb(210, 131, 124);
 }
