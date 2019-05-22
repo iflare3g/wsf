@@ -2,6 +2,9 @@ html,
 body {
   width: 100vw;
   height: 100vh;
+  font-family: "Helvetica", sans-serif;
+  font-display: swap;
+  font-weight: bold;
 }
 
 .bubbles {
@@ -11,20 +14,49 @@ body {
   overflow: hidden;
   position: absolute;
   height: auto;
-  min-height: 500px;
+  min-height: 300px;
   max-width: 100%;
-}
-
-.graphic {
-  z-index: 1;
 }
 
 .head {
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   height: auto;
   max-width: 100%;
-  min-height: 40px;
+  min-height: 100px;
+  margin-top: -100px;
+}
+
+.countdown {
+  min-height: 30px;
+  background-color: rgb(210, 131, 124);
+  padding: 30px;
+  position: absolute;
+  width: 660px;
+  border-radius: 15px;
+  top: 730px;
+  z-index: 2;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+@media (min-width: 376px) and (max-width: 450px) {
+  .countdown {
+    top: 230px!important;
+    padding: 15px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .countdown {
+    top: 200px;
+    padding: 15px;
+    width: 300px;
+  }
 }
 
 @keyframes float {

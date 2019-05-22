@@ -4,9 +4,10 @@ export default ({ children }) => (
   <div
     style={{
       margin: `3rem auto`,
-      maxWidth: 650,
+      maxWidth: '60%',
       padding: `0 1rem`,
-      textAlign: "center"
+      textAlign: "center",
+      height: '100vh'
     }}
   >
     {children}
