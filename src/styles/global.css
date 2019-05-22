@@ -1,9 +1,5 @@
-body, div, h1, h2, h3, h4, h5, h6, p, ul, img {margin:0px; padding:0px; }
-
 html,
 body {
-  width: 100vw;
-  height: 100vh;
   font-family: "Helvetica", sans-serif;
   font-display: swap;
   font-weight: bold;
@@ -14,18 +10,18 @@ body {
   animation: float 2s ease-in-out infinite;
   z-index: -1;
   overflow: hidden;
-  position: absolute;
   height: auto;
-  min-height: 500px;
   max-width: 100%;
+  position: absolute;
+}
+
+.floating-wrapper {
+  margin-top: -60px;
 }
 
 .head {
-  z-index: 2;
-  position: absolute;
   height: auto;
   max-width: 100%;
-  min-height: 50px;
 }
 
 @keyframes float {
@@ -40,11 +36,30 @@ body {
   }
 }
 
-.container {
-  width: 800px;
-  margin: 0 auto;
-}
-
 .wsf-red {
   color: rgb(210, 131, 124);
+}
+
+.wsf-grey {
+  color: #595959!important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #595959;
+}
+
+.nav-link:hover, .social:hover {
+  color: rgb(210, 131, 124)!important;
+}
+
+.nav-link {
+  font-size: large!important;
+  letter-spacing: .1em;
+}
+
+
+@media screen and (max-width: 480px) {
+  .floating-wrapper {
+    margin-top: 0px;
+  }
 }

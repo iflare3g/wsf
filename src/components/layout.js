@@ -1,17 +1,8 @@
 import React from "react";
+import Container from 'react-bootstrap/Container'
 
 export default ({ children }) => (
-  <div
-    style={{
-      margin: `3rem auto`,
-      maxWidth: '60%',
-      padding: `0 1rem`,
-      textAlign: "center",
-      height: '100vh',
-      display: "grid",
-      justifyContent: "space-around",
-    }}
-  >
+  <Container className="text-center">
     {children}
-  </div>
+  </Container>
 );
