@@ -8,8 +8,8 @@ import Col from "react-bootstrap/Col";
 
 export default () => (
   <Layout fluid="fluid">
-    <Container style={{ padding: "10% 0%" }}>
-      <Row>
+    <Container style={{ padding: "5% 0%" }}>
+      <Row className="animated fadeInUp">
         <Col lg="6" className="mt-5">
           <Image
             src="http://woodsoundfestival.site/wp-content/uploads/2018/05/19657218_1005037402967919_7443921180110871691_n-1.jpg"
@@ -38,7 +38,7 @@ export default () => (
           </p>
         </Col>
       </Row>
-      <Row>
+      <Row className="animated fadeInUp">
         <Col lg="6" className="mt-5">
           <Image
             src="http://woodsoundfestival.site/wp-content/uploads/2018/05/20901739_1034700070001652_4044090130539098763_o-1.jpg"

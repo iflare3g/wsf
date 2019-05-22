@@ -10,11 +10,11 @@ export default () => (
     <Navbar />
     <Container
       fluid
-      className="bg-contacts d-flex justify-content-center align-items-center"
+      className="bg-contacts d-flex justify-content-center align-items-center animated fadeIn"
     >
       <h1 className="text-white">Contatti</h1>
     </Container>
-    <Container fluid className="text-center">
+    <Container fluid className="text-center animated fadeInUp">
       <Row className="py-5">
         <Col lg="3">
           <h3 className="wsf-grey">Dove siamo</h3>
