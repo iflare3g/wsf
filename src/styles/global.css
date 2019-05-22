@@ -6,11 +6,13 @@ body {
 
 .bubbles {
   transform: translatey(0px);
-  animation: float 6s ease-in-out infinite;
+  animation: float 2s ease-in-out infinite;
   z-index: -1;
   overflow: hidden;
   position: absolute;
   height: auto;
+  min-height: 500px;
+  max-width: 100%;
 }
 
 .graphic {
@@ -20,7 +22,9 @@ body {
 .head {
   z-index: 2;
   position: absolute;
-  height: 750px;
+  height: auto;
+  max-width: 100%;
+  min-height: 40px;
 }
 
 @keyframes float {
