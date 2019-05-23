@@ -42,7 +42,7 @@ export default () => (
           </p>
         </Col>
         <Col lg="3">
-          <h3 className="wsf-grey">In Aereo</h3>
+          <h3 className="wsf-grey">In aereo</h3>
           <p className="mt-3 font-weight-light">
             Napoli (200 Km) Lamezia Terme (194 Km) poi proseguire in pullman o
             taxi

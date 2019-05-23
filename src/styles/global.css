@@ -1,3 +1,5 @@
+@import "~animate.css/source/_base.css";
+
 html,
 body {
   font-family: "Helvetica", sans-serif;
@@ -69,6 +71,7 @@ body {
   height: 600px;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 @media screen and (max-width: 480px) {
