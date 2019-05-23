@@ -1,0 +1,81 @@
+@import "~animate.css/source/_base.css";
+
+html,
+body {
+  font-family: "Helvetica", sans-serif;
+  font-display: swap;
+  font-weight: bold;
+}
+
+.bubbles {
+  transform: translatey(0px);
+  animation: float 2s ease-in-out infinite;
+  z-index: -1;
+  overflow: hidden;
+  height: auto;
+  max-width: 100%;
+  position: absolute;
+}
+
+.floating-wrapper {
+  margin-top: -60px;
+}
+
+.head {
+  height: auto;
+  max-width: 100%;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.wsf-red {
+  color: rgb(210, 131, 124);
+}
+
+.wsf-grey {
+  color: #595959 !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #595959;
+}
+
+.nav-link:hover,
+.social:hover {
+  color: rgb(210, 131, 124) !important;
+}
+
+.nav-link {
+  font-size: large !important;
+  letter-spacing: 0.1em;
+}
+
+.festival-img {
+  height: auto;
+  max-width: 100%;
+}
+
+.bg-contacts {
+  background-image: url("https://mixtape.select-themes.com/wp-content/uploads/2017/04/contact-title-img.jpg");
+  background-position: center top;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media screen and (max-width: 480px) {
+  .floating-wrapper {
+    margin-top: 0px;
+  }
+}
