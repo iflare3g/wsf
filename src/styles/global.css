@@ -3,6 +3,8 @@ body {
   font-family: "Helvetica", sans-serif;
   font-display: swap;
   font-weight: bold;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 ul, li {
