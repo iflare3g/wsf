@@ -11,7 +11,7 @@ export default () => (
       fluid
       className="bg-contacts d-flex justify-content-center align-items-center animated fadeIn"
     >
-      <h1 className="text-white">Contatti</h1>
+      <h1 className="wsf-grey">Contatti</h1>
     </Container>
     <Container fluid className="text-center animated fadeInUp">
       <Row className="py-5">
