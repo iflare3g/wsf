@@ -7,13 +7,15 @@ body {
   overflow-x: hidden;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -56,6 +58,10 @@ ul, li {
 
 .wsf-grey {
   color: #595959 !important;
+}
+
+.wsf-nav {
+  z-index: 100;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
