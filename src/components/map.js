@@ -32,7 +32,7 @@ class Map extends Component {
         <GoogleMapExample
           containerElement={<div className="container" />}
           mapElement={<div className="column" />}
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyAHBOUhyOM6kefVZRcOjmQcdCWq99cQc"
+          googleMapURL=""
           loadingElement={<h1>Loading...</h1>}
         />
       </div>
