@@ -1,5 +1,7 @@
 // Importing Bulma from node_modules
-@import '~bulma/bulma.sass';
+@import "~bulma/bulma.sass";
+
+$has-no-decoration: none;
 
 html,
 body {
@@ -8,6 +10,10 @@ body {
   font-weight: bold;
   width: 100%;
   overflow-x: hidden;
+}
+
+.has-no-decoration {
+  text-decoration: $has-no-decoration !important;
 }
 
 ul,
@@ -94,7 +100,6 @@ li {
 .bg-contacts {
   background-image: url("https://s3-eu-west-1.amazonaws.com/wood-sound-festival/contatti.jpg");
   background-position: center center;
-  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -17,7 +17,7 @@ export default () => (
         src="https://s3-eu-west-1.amazonaws.com/wood-sound-festival/LogoWood.svg"
         width="100"
         height="60"
-        className="d-inline-block align-top"
+        className="d-inline-block align-top image is-64x64"
         alt="React Bootstrap logo"
       />
     </Navbar.Brand>
