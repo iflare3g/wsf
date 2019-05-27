@@ -1,5 +1,7 @@
 // Importing Bulma from node_modules
-@import '~bulma/bulma.sass';
+@import "~bulma/bulma.sass";
+
+$has-no-decoration: none;
 
 html,
 body {
@@ -10,13 +12,19 @@ body {
   overflow-x: hidden;
 }
 
-ul, li {
+.has-no-decoration {
+  text-decoration: $has-no-decoration !important;
+}
+
+ul,
+li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-ul, li {
+ul,
+li {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -61,6 +69,10 @@ ul, li {
   color: #595959 !important;
 }
 
+.wsf-nav {
+  z-index: 100;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #595959;
 }
@@ -88,7 +100,6 @@ ul, li {
 .bg-contacts {
   background-image: url("https://s3-eu-west-1.amazonaws.com/wood-sound-festival/contatti.jpg");
   background-position: center center;
-  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
 }
