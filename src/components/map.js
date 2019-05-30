@@ -32,7 +32,7 @@ class Map extends Component {
         <GoogleMapExample
           containerElement={<div className="hero" />}
           mapElement={<div className="hero is-fullheight" />}
-          googleMapURL="http://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDsjmPszJklvGK_ecebrZFpcln-f2td6CE&ver=3.10"
+          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDsjmPszJklvGK_ecebrZFpcln-f2td6CE&ver=3.10"
           loadingElement={<h1>Loading...</h1>}
         />
       </div>
