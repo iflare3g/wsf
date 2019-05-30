@@ -19,20 +19,20 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
           </Col>
         </Row>
         <section className="container mt-3">
-          <div className="columns">
-            <div className="column wsf-red">
+          <div className="columns has-text-centered">
+            <div className="column wsf-red is-narrow is-2">
               <h1>{days}</h1>
               <p className="font-weight-light">GIORNI</p>
             </div>
-            <div className="column wsf-red">
+            <div className="column wsf-red is-narrow is-2">
               <h1>{hours}</h1>
               <p className="font-weight-light">ORE</p>
             </div>
-            <div className="column wsf-red">
+            <div className="column wsf-red is-narrow is-2">
               <h1>{minutes}</h1>
               <p className="font-weight-light">MINUTI</p>
             </div>
-            <div className="column wsf-red">
+            <div className="column wsf-red is-narrow is-2">
               <h1>{seconds}</h1>
               <p className="font-weight-light">SECONDI</p>
             </div>
