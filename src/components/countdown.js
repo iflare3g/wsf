@@ -19,7 +19,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
           </Col>
         </Row>
         <section className="container mt-3">
-          <div className="columns justify-content-center">
+          <div className="columns is-centered">
             <div className="column wsf-red is-narrow is-2">
               <h1>{days}</h1>
               <p className="font-weight-light">GIORNI</p>
