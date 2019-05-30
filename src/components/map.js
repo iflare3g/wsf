@@ -30,9 +30,9 @@ class Map extends Component {
     return (
       <div>
         <GoogleMapExample
-          containerElement={<div className="container" />}
-          mapElement={<div className="column" />}
-          googleMapURL=""
+          containerElement={<div className="hero" />}
+          mapElement={<div className="hero is-fullheight" />}
+          googleMapURL="http://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDsjmPszJklvGK_ecebrZFpcln-f2td6CE&ver=3.10"
           loadingElement={<h1>Loading...</h1>}
         />
       </div>

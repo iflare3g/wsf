@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Map from "../components/map";
 import "../styles/bulma.scss";
 
 export default () => (
@@ -10,15 +11,28 @@ export default () => (
     <section className="hero is-fullheight">
       <div className="columns is-gapless">
         <div className="column is-half">
-          <div className="hero is-fullheight bg-bulma" />
+          <Map />
         </div>
         <div className="column is-half">
           <div className="hero is-fullheight">
             <article className="px-lg-5 hero-body">
               <div className="container">
-                <h1 className="title is-2 wsf-grey">Contatti</h1>
-                <ul className="contacts">
-                  <li>
+                <h1 className="title is-2 wsf-grey is-spaced">Contatti</h1>
+                <div className="space-divider" />
+                <h2 className="subtitle is-6 wsf-grey">
+                  Nel Comune di Nemoli (PZ), nel Parco Nazionale dell’Appennino
+                  Lucano, è presente una gemma preziosa che la natura ha
+                  regalato agli abitanti della Basilicata: il Lago Sirino, un
+                  piccolo bacino idrico naturale della Basilicata posto alle
+                  falde della vetta omonima ad un’altitudine di 788 metri sul
+                  livello del mare. Sulle sue rive si sviluppano varie
+                  iniziative turistiche e sorgono numerosi esercizi commerciali
+                  raggiungibili in breve tempo. Lungo il perimetro del lago è
+                  presente una stradina di 1 km indicata come ciclostrada; nelle
+                  immediate vicinanze si può usufruire anche di un’area camper.
+                </h2>
+                <div className="columns">
+                  <div className="column contacts">
                     <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
                     <a
                       href="mailto:woodsoundfestival@gmail.com"
@@ -26,8 +40,10 @@ export default () => (
                     >
                       woodsoundfestival@gmail.com
                     </a>
-                  </li>
-                  <li>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column contacts">
                     <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
                     <a
                       href="mailto:info@woodsoundfestival.site"
@@ -35,8 +51,10 @@ export default () => (
                     >
                       info@woodsoundfestival.site
                     </a>
-                  </li>
-                  <li>
+                  </div>
+                </div>
+                <div className="columns">
+                  <div className="column contacts">
                     <FontAwesomeIcon icon={faPhone} className="mr-3" />
                     <a
                       href="tel:+393347944763"
@@ -44,8 +62,8 @@ export default () => (
                     >
                       +39 334 79 44 763
                     </a>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
             </article>
           </div>
