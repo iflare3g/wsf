@@ -1,5 +1,10 @@
 // Importing Bulma from node_modules
 @import "~bulma/bulma.sass";
+@import 'node_modules/@fortawesome/free-solid-svg-icons/styles';
+@import 'node_modules/@fortawesome/free-brands-svg-icons/styles';
+@import 'node_modules/@fortawesome/react-fontawesome/styles';
+@import 'node_modules/@fortawesome/fontawesome/styles';
+@import 'node_modules/@fortawesome/fontawesome-common-types/styles';
 
 $has-no-decoration: none;
 
