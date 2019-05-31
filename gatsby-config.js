@@ -13,6 +13,9 @@ module.exports = {
     url: "https://www.woodsoundfestival.it", // No trailing slash allowed!
     facebookUsername: "woodsoundfestival",
   },
+  css: [
+  '@fortawesome/fontawesome/styles.css',
+  ],
   plugins: [
     `gatsby-plugin-favicon`,
     `gatsby-plugin-sass`,
