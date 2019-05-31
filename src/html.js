@@ -26,7 +26,9 @@ export default function HTML(props) {
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+          defer
         />
+        <link href="https://use.fontawesome.com/releases/v5.8.2/css/svg-with-js.css" rel="stylesheet"></link>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
