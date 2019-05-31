@@ -11,12 +11,12 @@ class Map extends Component {
     const GoogleMapExample = withScriptjs(
       withGoogleMap(props => (
         <GoogleMap
-          defaultCenter={{ lat: 40.0719925, lng: 15.8563272 }}
-          defaultZoom={12}
+          defaultCenter={{ lat: 40.0924661, lng: 15.8078624 }}
+          defaultZoom={18}
           defaultOptions={{ mapTypeControl: false }}
         >
           <Marker
-            position={{ lat: 40.0719925, lng: 15.8563272 }}
+            position={{ lat: 40.0924661, lng: 15.8078624 }}
             icon="https://s3-eu-west-1.amazonaws.com/otix-bucket-s3/otix-new-site/marker.png"
             onClick={() =>
               window.open(
@@ -28,14 +28,22 @@ class Map extends Component {
       ))
     );
     return (
-      <div>
+      <React.Fragment>
         <GoogleMapExample
           containerElement={<div className="hero" />}
           mapElement={<div className="hero is-fullheight" />}
-          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDsjmPszJklvGK_ecebrZFpcln-f2td6CE&ver=3.10"
+          googleMapURL={
+            process.env.NODE_ENV === "development"
+              ? `https://maps.googleapis.com/maps/api/js?v=3&key=${
+                  process.env.GOOGLE_API_KEY
+                }&ver=3.10`
+              : `https://maps.googleapis.com/maps/api/js?v=3&key=${
+                  process.env.GATSBY_GOOGLE_API_KEY
+                }&ver=3.10`
+          }
           loadingElement={<h1>Loading...</h1>}
         />
-      </div>
+      </React.Fragment>
     );
   }
 }
