@@ -10,7 +10,7 @@ export default () => (
     expand="lg"
     bg="light"
     variant="light"
-    className="animated fadeIn wsf-nav"
+    className="animated fadeIn wsf-nav shadow"
   >
     <Navbar.Brand href="/">
       <img
