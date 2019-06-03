@@ -1,3 +1,8 @@
+// Importing Bulma from node_modules
+@import "~bulma/bulma.sass";
+
+$has-no-decoration: none;
+
 html,
 body {
   font-family: "Helvetica", sans-serif;
@@ -5,6 +10,10 @@ body {
   font-weight: bold;
   width: 100%;
   overflow-x: hidden;
+}
+
+.has-no-decoration {
+  text-decoration: $has-no-decoration !important;
 }
 
 ul,
@@ -89,12 +98,14 @@ li {
 }
 
 .bg-contacts {
-  background-image: url("https://mixtape.select-themes.com/wp-content/uploads/2017/04/contact-title-img.jpg");
-  background-position: center top;
-  height: 600px;
+  background-image: url("https://s3-eu-west-1.amazonaws.com/wood-sound-festival/contatti.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+}
+
+.container-bg {
+  max-width: 800px;
 }
 
 @media screen and (max-width: 480px) {

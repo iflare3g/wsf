@@ -7,12 +7,13 @@ export default () => (
     <Col lg="12">
       <img
         src="https://s3-eu-west-1.amazonaws.com/wood-sound-festival/bubbles.png"
-        alt=""
+        alt="bubbles"
         className="bubbles animated fadeInDown"
+        style={{ zIndex: "0" }}
       />
       <img
         src="https://s3-eu-west-1.amazonaws.com/wood-sound-festival/head.png"
-        alt=""
+        alt="fulminacci"
         className="head animated fadeIn"
       />
     </Col>
