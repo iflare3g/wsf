@@ -30,12 +30,14 @@ export default () => (
     <Container style={{ padding: "5% 0%" }}>
       <Row className="animated fadeInUp">
         <Col lg="6" className="mt-5">
-          <Image
-            src="http://woodsoundfestival.site/wp-content/uploads/2018/05/19657218_1005037402967919_7443921180110871691_n-1.jpg"
-            height="700"
-            width="500"
-            className="festival-img image"
-          />
+          <figure className="image is-2by3">
+            <Image
+              src="http://woodsoundfestival.site/wp-content/uploads/2018/05/19657218_1005037402967919_7443921180110871691_n-1.jpg"
+              height="700"
+              width="500"
+              className="festival-img"
+            />
+          </figure>
         </Col>
         <Col lg="6" className="mt-5">
           <h1
@@ -59,12 +61,14 @@ export default () => (
       </Row>
       <Row className="animated fadeInUp">
         <Col lg="6" className="mt-5">
-          <Image
-            src="http://woodsoundfestival.site/wp-content/uploads/2018/05/20901739_1034700070001652_4044090130539098763_o-1.jpg"
-            height="700"
-            width="500"
-            className="festival-img image"
-          />
+          <figure className="image is-2by3">
+            <Image
+              src="http://woodsoundfestival.site/wp-content/uploads/2018/05/20901739_1034700070001652_4044090130539098763_o-1.jpg"
+              height="700"
+              width="500"
+              className="festival-img"
+            />
+          </figure>
         </Col>
         <Col lg="6" className="mt-5">
           <h1
