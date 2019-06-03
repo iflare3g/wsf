@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/navbar";
+import SEO from "../components/seo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Map from "../components/map";
@@ -7,6 +8,19 @@ import "../styles/contacts.scss";
 
 export default () => (
   <React.Fragment>
+    <SEO
+      title="Contatti"
+      description="Nel Comune di Nemoli (PZ), nel Parco Nazionale dell’Appennino
+    Lucano, è presente una gemma preziosa che la natura ha
+    regalato agli abitanti della Basilicata: il Lago Sirino, un
+    piccolo bacino idrico naturale della Basilicata posto alle
+    falde della vetta omonima ad un’altitudine di 788 metri sul
+    livello del mare. Sulle sue rive si sviluppano varie
+    iniziative turistiche e sorgono numerosi esercizi commerciali
+    raggiungibili in breve tempo. Lungo il perimetro del lago è
+    presente una stradina di 1 km indicata come ciclostrada; nelle
+    immediate vicinanze si può usufruire anche di un’area camper."
+    />
     <Navbar />
     <section className="hero is-fullheight animated fadeIn">
       <div className="columns is-gapless">

@@ -9,5 +9,16 @@ require("dotenv").config({
 });
 
 module.exports = {
-  plugins: [`gatsby-plugin-favicon`, `gatsby-plugin-sass`]
+  siteMetadata: {
+    title: "Wood Sound Festival",
+    titleTemplate: "%s | Wood Sound Festival",
+    description:
+      "Il Wood Sound Festival è un inno alle cose belle della vita. Musica, Arte in tutte le sue forme, Cibo e molto altro ancora...",
+    url: "https://www.woodsoundfestival.it" // No trailing slash allowed!
+  },
+  plugins: [
+    `gatsby-plugin-favicon`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`
+  ]
 };
