@@ -21,7 +21,6 @@ const SEO = ({ title, description, image, pathname, article }) => (
         description: description || defaultDescription,
         url: `${siteUrl}${pathname || "/"}`
       };
-
       return (
         <>
           <Helmet title={seo.title} titleTemplate={titleTemplate}>
