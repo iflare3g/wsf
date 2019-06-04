@@ -28,7 +28,7 @@ class Map extends Component {
       ))
     );
     return (
-      <div>
+      <React.Fragment>
         <GoogleMapComponent
           containerElement={<div className="hero" />}
           mapElement={<div className="hero is-fullheight" />}
@@ -39,7 +39,7 @@ class Map extends Component {
           }
           loadingElement={<h2>Loading...</h2>}
         />
-      </div>
+      </React.Fragment>
     );
   }
 }
