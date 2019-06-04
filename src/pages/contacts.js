@@ -1,16 +1,10 @@
 import React from "react";
 import Navbar from "../components/navbar";
-import SEO from "../components/seo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Map from "../components/map";
 import SEO from "../components/seo";
 import "../styles/contacts.scss";
-import fontawesome from '@fortawesome/fontawesome';
-
-fontawesome.config = {
-  autoAddCss: false,
-};
 
 export default () => (
   <React.Fragment>
