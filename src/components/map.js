@@ -8,16 +8,16 @@ import {
 
 class Map extends Component {
   render() {
-    const GoogleMapExample = withScriptjs(
+    const GoogleMapComponent = withScriptjs(
       withGoogleMap(props => (
         <GoogleMap
-          defaultCenter={{ lat: 40.0924661, lng: 15.8078624 }}
+          defaultCenter={{ lat: 40.0924671, lng: 15.8073166 }}
           defaultZoom={18}
           defaultOptions={{ mapTypeControl: false }}
         >
           <Marker
-            position={{ lat: 40.0924661, lng: 15.8078624 }}
-            icon="https://s3-eu-west-1.amazonaws.com/otix-bucket-s3/otix-new-site/marker.png"
+            position={{ lat: 40.0924671, lng: 15.8073166 }}
+            icon="https://wood-sound-festival.s3-eu-west-1.amazonaws.com/marker1.png"
             onClick={() =>
               window.open(
                 "https://www.google.com/maps/search/?api=1&query=lago+sirino"
@@ -29,19 +29,15 @@ class Map extends Component {
     );
     return (
       <React.Fragment>
-        <GoogleMapExample
+        <GoogleMapComponent
           containerElement={<div className="hero" />}
           mapElement={<div className="hero is-fullheight" />}
           googleMapURL={
             process.env.NODE_ENV === "development"
-              ? `https://maps.googleapis.com/maps/api/js?v=3&key=${
-                  process.env.GOOGLE_API_KEY
-                }&ver=3.10`
-              : `https://maps.googleapis.com/maps/api/js?v=3&key=${
-                  process.env.GATSBY_GOOGLE_API_KEY
-                }&ver=3.10`
+              ? process.env.GOOGLE_MAP_URL
+              : process.env.GATSBY_GOOGLE_MAP_URL
           }
-          loadingElement={<h1>Loading...</h1>}
+          loadingElement={<h2>Loading...</h2>}
         />
       </React.Fragment>
     );

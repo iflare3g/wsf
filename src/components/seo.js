@@ -12,8 +12,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
           defaultTitle,
           titleTemplate,
           defaultDescription,
-          siteUrl,
-          facebookUsername
+          siteUrl
         }
       }
     }) => {
@@ -27,13 +26,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
           <Helmet title={seo.title} titleTemplate={titleTemplate}>
             <meta name="description" content={seo.description} />
             {seo.url && <meta property="og:url" content={seo.url} />}
-            {(article ? true : null) && (
-              <meta property="og:type" content="article" />
-            )}
             {seo.title && <meta property="og:title" content={seo.title} />}
-            {seo.description && (
-              <meta property="og:description" content={seo.description} />
-            )}
           </Helmet>
         </>
       );
@@ -45,16 +38,12 @@ export default SEO;
 
 SEO.propTypes = {
   title: PropTypes.string,
-  description: PropTypes.string,
-  pathname: PropTypes.string,
-  article: PropTypes.bool
+  description: PropTypes.string
 };
 
 SEO.defaultProps = {
   title: null,
-  description: null,
-  pathname: null,
-  article: false
+  description: null
 };
 
 const query = graphql`
@@ -65,7 +54,6 @@ const query = graphql`
         titleTemplate
         defaultDescription: description
         siteUrl: url
-        facebookUsername
       }
     }
   }
