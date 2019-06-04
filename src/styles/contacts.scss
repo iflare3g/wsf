@@ -1,0 +1,13 @@
+$wsf-grey: #595959;
+$wsf-red: rgb(210, 131, 124);
+
+.space-divider {
+  border-bottom: 2px solid $wsf-grey;
+  width: 50px;
+  margin: 20px 0;
+}
+
+.contacts > a:hover {
+  color: $wsf-red !important;
+  text-decoration: none;
+}
