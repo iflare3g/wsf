@@ -1,10 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Container from "react-bootstrap/Container";
-import Image from "react-bootstrap/Image";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import "../styles/festival.scss";
 
 export default () => (
   <Layout fluid="fluid">
@@ -27,76 +24,34 @@ export default () => (
       territorio e una valida occasione di condivisione e aggregazione
       giovanile."
     />
-    <Container style={{ padding: "5% 0%" }}>
-      <Row className="animated fadeInUp">
-        <Col lg="6" className="mt-5">
-          <figure className="image is-2by3">
-            <Image
-              src="http://woodsoundfestival.site/wp-content/uploads/2018/05/19657218_1005037402967919_7443921180110871691_n-1.jpg"
-              height="700"
-              width="500"
-              className="festival-img"
-            />
-          </figure>
-        </Col>
-        <Col lg="6" className="mt-5">
-          <h1
-            className="text-justify"
-            style={{ textTransform: "uppercase", fontSize: "30px" }}
-          >
-            Il Lago
-          </h1>
-          <p className="mt-3 text-justify pr-lg-5 pr-0 wsf-grey font-weight-light">
-            Nel Comune di Nemoli (PZ), nel Parco Nazionale dell’Appennino
-            Lucano, è presente una gemma preziosa che la natura ha regalato agli
-            abitanti della Basilicata: il Lago Sirino, un piccolo bacino idrico
-            naturale della Basilicata posto alle falde della vetta omonima ad
-            un’altitudine di 788 metri sul livello del mare. Sulle sue rive si
-            sviluppano varie iniziative turistiche e sorgono numerosi esercizi
-            commerciali raggiungibili in breve tempo. Lungo il perimetro del
-            lago è presente una stradina di 1 km indicata come ciclostrada;
-            nelle immediate vicinanze si può usufruire anche di un’area camper.{" "}
-          </p>
-        </Col>
-      </Row>
-      <Row className="animated fadeInUp">
-        <Col lg="6" className="mt-5">
-          <figure className="image is-2by3">
-            <Image
-              src="http://woodsoundfestival.site/wp-content/uploads/2018/05/20901739_1034700070001652_4044090130539098763_o-1.jpg"
-              height="700"
-              width="500"
-              className="festival-img"
-            />
-          </figure>
-        </Col>
-        <Col lg="6" className="mt-5">
-          <h1
-            className="text-justify"
-            style={{ textTransform: "uppercase", fontSize: "30px" }}
-          >
-            Il Festival
-          </h1>
-          <p className="mt-3 text-justify pr-lg-5 pr-0 wsf-grey font-weight-light">
-            La serata sarà arricchita da numerosi artisti che si sostituiranno
-            sul palco variando generi e stili musicali. La line up è in continua
-            evoluzione, ogni aggiornamento potete trovarlo sui nostri canali
-            social. Il WSF è alla sua seconda edizione, con il successo del 2017
-            e la partecipazione della Main Guest GAZZELLE oltre a tutta la line
-            up composta da: Umberto Scaramozza, I Bytecore, Raffaele Pelosi,
-            Benny Sola, Antonio Viceconte e Massimo Cantisani, lo staff è
-            riuscito a portare a termine una splendida serata superando le loro
-            stesse aspettative. Con l’edizione del 2018 l’organizzazione vuole
-            ripetersi nell’impresa, proponendo una serata all’insegna di buona
-            musica, offrendo cibo e bevande di qualità e fornendo un pregevole
-            intrattenimento nell’accogliente area del “Boschetto del Lago
-            Sirino”. Il WSF non sarà solo musica, ma una celebrazione dell’arte
-            in tutte le sue forme, una vera attività di promozione del
-            territorio e una valida occasione di condivisione e aggregazione
-            giovanile.
-          </p>
-        </Col>
-      </Row>
-    </Container>
+    <div className="mt-3 hero is-medium is-light">
+      <div className="hero-body">
+        <h1 className="wsf-grey is-bold">Il Festival</h1>
+      </div>
+    </div>
+    <div className="columns mt-5 festival">
+      <div className="column is-half">
+        <figure className="image is-3by2 has-shadow">
+          <img src="https://scontent-fco1-1.xx.fbcdn.net/v/t1.0-9/41363460_1296418770496446_2908830372890411008_o.jpg?_nc_cat=111&_nc_ht=scontent-fco1-1.xx&oh=e5e7ea668c8b99bf1f3e31ae5ee00766&oe=5D595108" />
+        </figure>
+      </div>
+      <div className="column is-half">
+        <figure className="image is-3by2 has-shadow">
+          <img src="https://scontent-fco1-1.xx.fbcdn.net/v/t1.0-9/41177730_1296421010496222_4346051478104834048_o.jpg?_nc_cat=107&_nc_ht=scontent-fco1-1.xx&oh=409a792e40b0fb7d4dd3e658f2469d5f&oe=5D952DDA" />
+        </figure>
+      </div>
+    </div>
+    <div className="columns">
+      <div className="column is-half">
+        <figure className="image is-3by2 has-shadow">
+          <img src="https://scontent-fco1-1.xx.fbcdn.net/v/t1.0-9/41151291_1296423093829347_5143121017954107392_o.jpg?_nc_cat=103&_nc_ht=scontent-fco1-1.xx&oh=902348bdb81836878618f4bc86b5c197&oe=5D972F79" />
+        </figure>
+      </div>
+      <div className="column is-half">
+        <figure className="image is-3by2 has-shadow">
+          <img src="https://scontent-fco1-1.xx.fbcdn.net/v/t1.0-9/41165903_1296423023829354_449879798278258688_o.jpg?_nc_cat=107&_nc_ht=scontent-fco1-1.xx&oh=eb4d6c33c7545871eaba4ceb66e8c525&oe=5D8FB81C" />
+        </figure>
+      </div>
+    </div>
   </Layout>
 );
