@@ -1,9 +1,11 @@
 import React from "react";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import "../styles/festival.scss";
 
-export default () => (
+export default ({ data }) => (
   <Layout fluid="fluid">
     <SEO
       title="Il Festival"
@@ -31,27 +33,76 @@ export default () => (
     </div>
     <div className="columns mt-5 festival">
       <div className="column is-half">
-        <figure className="image is-3by2 has-shadow">
-          <img src="https://scontent-fco1-1.xx.fbcdn.net/v/t1.0-9/41363460_1296418770496446_2908830372890411008_o.jpg?_nc_cat=111&_nc_ht=scontent-fco1-1.xx&oh=e5e7ea668c8b99bf1f3e31ae5ee00766&oe=5D595108" />
+        <figure className="image is-3by2 has-shadow d-flex">
+          <Img
+            fluid={data.wsf1.childImageSharp.fluid}
+            alt="wsf-1"
+            style={{ position: "unset" }}
+          />
         </figure>
       </div>
       <div className="column is-half">
-        <figure className="image is-3by2 has-shadow">
-          <img src="https://scontent-fco1-1.xx.fbcdn.net/v/t1.0-9/41177730_1296421010496222_4346051478104834048_o.jpg?_nc_cat=107&_nc_ht=scontent-fco1-1.xx&oh=409a792e40b0fb7d4dd3e658f2469d5f&oe=5D952DDA" />
+        <figure className="image is-3by2 has-shadow d-flex">
+          <Img
+            fluid={data.wsf2.childImageSharp.fluid}
+            alt="wsf-2"
+            style={{ position: "unset" }}
+          />
         </figure>
       </div>
     </div>
     <div className="columns">
       <div className="column is-half">
-        <figure className="image is-3by2 has-shadow">
-          <img src="https://scontent-fco1-1.xx.fbcdn.net/v/t1.0-9/41151291_1296423093829347_5143121017954107392_o.jpg?_nc_cat=103&_nc_ht=scontent-fco1-1.xx&oh=902348bdb81836878618f4bc86b5c197&oe=5D972F79" />
+        <figure className="image is-3by2 has-shadow d-flex">
+          <Img
+            fluid={data.wsf3.childImageSharp.fluid}
+            alt="wsf-3"
+            style={{ position: "unset" }}
+          />
         </figure>
       </div>
       <div className="column is-half">
-        <figure className="image is-3by2 has-shadow">
-          <img src="https://scontent-fco1-1.xx.fbcdn.net/v/t1.0-9/41165903_1296423023829354_449879798278258688_o.jpg?_nc_cat=107&_nc_ht=scontent-fco1-1.xx&oh=eb4d6c33c7545871eaba4ceb66e8c525&oe=5D8FB81C" />
+        <figure className="image is-3by2 has-shadow d-flex">
+          <Img
+            fluid={data.wsf4.childImageSharp.fluid}
+            alt="wsf-4"
+            style={{ position: "unset" }}
+          />
         </figure>
       </div>
     </div>
   </Layout>
 );
+
+export const query = graphql`
+  query {
+    wsf1: file(relativePath: { eq: "wsf-1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    wsf2: file(relativePath: { eq: "wsf-2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    wsf3: file(relativePath: { eq: "wsf-2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    wsf4: file(relativePath: { eq: "wsf-2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
