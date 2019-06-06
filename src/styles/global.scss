@@ -13,7 +13,8 @@ body {
 }
 
 .has-no-decoration {
-  text-decoration: $has-no-decoration !important;
+  -webkit-text-decoration: $has-no-decoration !important;
+          text-decoration: $has-no-decoration !important;
 }
 
 ul,
@@ -31,8 +32,10 @@ li {
 }
 
 .bubbles {
-  transform: translatey(0px);
-  animation: float 2s ease-in-out infinite;
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+  -webkit-animation: float 2s ease-in-out infinite;
+          animation: float 2s ease-in-out infinite;
   z-index: -1;
   overflow: hidden;
   height: auto;
@@ -49,15 +52,33 @@ li {
   max-width: 100%;
 }
 
-@keyframes float {
+@-webkit-keyframes float {
   0% {
-    transform: translatey(0px);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
   }
   50% {
-    transform: translatey(-20px);
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
   }
   100% {
-    transform: translatey(0px);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
   }
 }
 
@@ -112,4 +133,15 @@ li {
   .floating-wrapper {
     margin-top: 0px;
   }
+}
+
+.is-wsf-red {
+  background-color: transparent;
+  border-color: rgb(210, 131, 124);
+  color: #595959 !important;
+}
+
+.is-wsf-red:hover {
+  background-color: rgb(210, 131, 124);
+  color: white!important;
 }
