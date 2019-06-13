@@ -33,7 +33,7 @@ export default ({ data }) => (
     </div>
     <div className="columns mt-5 festival">
       <div className="column is-half">
-        <figure className="image is-3by2 has-shadow d-flex">
+        <figure className="image is-square has-shadow d-flex">
           <Img
             fluid={data.wsf1.childImageSharp.fluid}
             alt="wsf-1"
@@ -42,7 +42,7 @@ export default ({ data }) => (
         </figure>
       </div>
       <div className="column is-half">
-        <figure className="image is-3by2 has-shadow d-flex">
+        <figure className="image is-square has-shadow d-flex">
           <Img
             fluid={data.wsf2.childImageSharp.fluid}
             alt="wsf-2"
@@ -53,7 +53,7 @@ export default ({ data }) => (
     </div>
     <div className="columns">
       <div className="column is-half">
-        <figure className="image is-3by2 has-shadow d-flex">
+        <figure className="image is-square has-shadow d-flex">
           <Img
             fluid={data.wsf3.childImageSharp.fluid}
             alt="wsf-3"
@@ -62,9 +62,29 @@ export default ({ data }) => (
         </figure>
       </div>
       <div className="column is-half">
-        <figure className="image is-3by2 has-shadow d-flex">
+        <figure className="image is-square has-shadow d-flex">
           <Img
             fluid={data.wsf4.childImageSharp.fluid}
+            alt="wsf-4"
+            style={{ position: "unset" }}
+          />
+        </figure>
+      </div>
+    </div>
+    <div className="columns">
+      <div className="column is-half">
+        <figure className="image is-square has-shadow d-flex">
+          <Img
+            fluid={data.wsf5.childImageSharp.fluid}
+            alt="wsf-3"
+            style={{ position: "unset" }}
+          />
+        </figure>
+      </div>
+      <div className="column is-half">
+        <figure className="image is-square has-shadow d-flex">
+          <Img
+            fluid={data.wsf6.childImageSharp.fluid}
             alt="wsf-4"
             style={{ position: "unset" }}
           />
@@ -76,30 +96,44 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
-    wsf1: file(relativePath: { eq: "wsf-1.jpg" }) {
+    wsf1: file(relativePath: { eq: "1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    wsf2: file(relativePath: { eq: "wsf-2.jpg" }) {
+    wsf2: file(relativePath: { eq: "2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    wsf3: file(relativePath: { eq: "wsf-2.jpg" }) {
+    wsf3: file(relativePath: { eq: "3.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    wsf4: file(relativePath: { eq: "wsf-2.jpg" }) {
+    wsf4: file(relativePath: { eq: "4.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1000) {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    wsf5: file(relativePath: { eq: "5.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    wsf6: file(relativePath: { eq: "6.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
