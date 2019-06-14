@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import StyledBackgroundSection from "../components/backgroundImage";
 import "../styles/festival.scss";
 
 export default ({ data }) => (
@@ -26,11 +27,20 @@ export default ({ data }) => (
       territorio e una valida occasione di condivisione e aggregazione
       giovanile."
     />
-    <div className="mt-3 hero is-medium is-light">
-      <div className="hero-body">
-        <h1 className="wsf-grey is-bold">Il Festival</h1>
-      </div>
-    </div>
+    <StyledBackgroundSection className="mt-3 hero is-medium" />
+    <section className="section">
+      <h2 className="wsf-grey font-weight-light">
+        Il WSF è una celebrazione dell'arte in tutte le sue forme, una vera
+        attività di promozione del territorio e una valida occasione di
+        condivisione e aggregazione giovanile nonché una vera e propria vetrina
+        per il territorio, il tutto immerso nel verde e nella natura così per
+        commemorare la sua immensa bellezza. Dopo il successo delle due
+        precedenti edizioni 2017 e 2018, vogliamo ripeterci nell'impresa,
+        proponendo nuovamente una manifestazione all'insegna di buona musica,
+        offrendo cibo e bevande di qualità del posto e fornendo un pregevole
+        intrattenimento nell'accogliente area del “Boschetto del Lago Sirino”.
+      </h2>
+    </section>
     <div className="columns mt-5 festival">
       <div className="column is-half">
         <figure className="image is-square has-shadow d-flex">
