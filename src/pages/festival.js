@@ -22,8 +22,8 @@ export default ({ data }) => (
       intrattenimento nell'accogliente area del “Boschetto del Lago Sirino."
     />
     <StyledBackgroundSection className="mt-3 hero is-medium" />
-    <section className="section">
-      <h2 className="wsf-grey font-weight-light is-size-4">
+    <section className="section px-lg-5 px-xl-5">
+      <h2 className="wsf-grey font-weight-light is-size-4 mx-xl-5 mx-lg-5">
         Il WSF è una celebrazione dell'arte in tutte le sue forme, una vera
         attività di promozione del territorio e una valida occasione di
         condivisione e aggregazione giovanile nonché una vera e propria vetrina
@@ -36,7 +36,7 @@ export default ({ data }) => (
       </h2>
     </section>
     <CollapseText>
-      <h2 className="wsf-grey font-weight-light is-size-4">
+      <h2 className="wsf-grey font-weight-light is-size-4 mx-xl-5 mx-lg-5">
         Siamo una piccola associazione culturale aiutata da un gruppo di ragazzi
         volenterosi e fattivi, circa 40, provenienti da Nemoli e dai paesi
         limitrofi (Lagonegro, Lauria, Rivello) che ha voluto scommettere
@@ -50,10 +50,10 @@ export default ({ data }) => (
         artisti che si sostituiranno sul palco variando generi e stili musicali.
         La line up è in continua evoluzione, ogni aggiornamento potete trovarlo
         sui nostri canali social. Lo staff è nuovamente pronto a dare il meglio
-        per la nuova edizione —5 per garantire la continuità di un Festival che
-        ha superato le aspettative di tutti. Oltre alla musica, allestiremo
-        l’area “Food and Beverage” dove si potranno degustare prodotti lucani e
-        di qualità e l’area dedicata all’arte, dando la possibilità a chiunque
+        per la nuova edizione per garantire la continuità di un Festival che ha
+        superato le aspettative di tutti. Oltre alla musica, allestiremo l’area
+        “Food and Beverage” dove si potranno degustare prodotti lucani e di
+        qualità e l’area dedicata all’arte, dando la possibilità a chiunque
         voglia farsi conoscere attraverso le proprie creazioni artistiche in
         qualsiasi forma. Riproponiamo la politica PLASTIC FREE a cui abbiamo già
         aderito lo scorso anno in quanto il festival incarna gli ideali

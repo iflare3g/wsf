@@ -1,7 +1,7 @@
 import React from "react";
 import Collapse from "react-bootstrap/Collapse";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 class CollapseText extends React.Component {
   constructor(props, context) {
@@ -25,11 +25,15 @@ class CollapseText extends React.Component {
         >
           <span>Leggi di più</span>
           <span class="icon is-small">
-            <FontAwesomeIcon icon={faAngleDown} />
+            {open ? (
+              <FontAwesomeIcon icon={faAngleUp} />
+            ) : (
+              <FontAwesomeIcon icon={faAngleDown} />
+            )}
           </span>
         </a>
         <Collapse in={this.state.open}>
-          <section className="section" id="example-collapse-text">
+          <section className="section px-lg-5" id="example-collapse-text">
             {this.props.children}
           </section>
         </Collapse>
