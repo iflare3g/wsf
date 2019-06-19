@@ -22,8 +22,8 @@ export default ({ data }) => (
       intrattenimento nell'accogliente area del “Boschetto del Lago Sirino."
     />
     <StyledBackgroundSection className="mt-3 hero is-medium" />
-    <section className="section px-lg-5 px-xl-5">
-      <h2 className="wsf-grey font-weight-light is-size-4 mx-xl-5 mx-lg-5">
+    <section className="section my-lg-4 px-lg-5 px-xl-5">
+      <h2 className="wsf-grey font-weight-light is-size-4 mx-xl-5 mx-lg-5 text-left">
         Il WSF è una celebrazione dell'arte in tutte le sue forme, una vera
         attività di promozione del territorio e una valida occasione di
         condivisione e aggregazione giovanile nonché una vera e propria vetrina
@@ -36,7 +36,7 @@ export default ({ data }) => (
       </h2>
     </section>
     <CollapseText>
-      <h2 className="wsf-grey font-weight-light is-size-4 mx-xl-5 mx-lg-5">
+      <h2 className="wsf-grey font-weight-light is-size-4 mx-xl-5 mx-lg-5 text-left">
         Siamo una piccola associazione culturale aiutata da un gruppo di ragazzi
         volenterosi e fattivi, circa 40, provenienti da Nemoli e dai paesi
         limitrofi (Lagonegro, Lauria, Rivello) che ha voluto scommettere
