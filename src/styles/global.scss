@@ -146,3 +146,14 @@ li {
     margin-top: 0px;
   }
 }
+
+.is-wsf-red {
+  background-color: transparent;
+  border-color: rgb(210, 131, 124);
+  color: #595959 !important;
+}
+
+.is-wsf-red:hover {
+  background-color: rgb(210, 131, 124);
+  color: white!important;
+}
