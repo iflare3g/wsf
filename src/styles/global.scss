@@ -9,6 +9,7 @@ body {
   font-display: swap;
   font-weight: bold;
   width: 100%;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -127,6 +128,17 @@ li {
 
 .container-bg {
   max-width: 800px;
+}
+
+.is-wsf-red {
+  background-color: transparent;
+  border-color: rgb(210, 131, 124);
+  color: #595959 !important;
+}
+
+ .is-wsf-red:hover {
+  background-color: rgb(210, 131, 124);
+  color: white!important;
 }
 
 @media screen and (max-width: 480px) {

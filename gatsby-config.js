@@ -19,6 +19,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-favicon`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/img/`
+      }
+    }
   ]
 };
