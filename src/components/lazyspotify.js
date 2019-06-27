@@ -26,6 +26,8 @@ class SpotifyIframe extends React.Component {
           />
         ) : null}
         <div className="hero-body">
+          <h1 className="title is-1 wsf-grey">Playlist</h1>
+          <div className="space-divider has-shadow" />
           <StyledIframe
             src="https://open.spotify.com/embed/playlist/2CGvuUGieR1v6rYfJL7n2K"
             width="100%"
@@ -35,6 +37,7 @@ class SpotifyIframe extends React.Component {
             allow="encrypted-media"
             onLoad={this.hideSpinner}
             title="spotify button playlist"
+            className="mt-lg-5"
           />
         </div>
       </section>

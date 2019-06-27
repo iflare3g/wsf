@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Floating from "../components/floating";
 import StyledArtists from "../components/artists";
 import StyledSpotify from "../components/lazyspotify";
+import StyledFirstMay from "../components/firstmay";
 
 export default () => (
   <React.Fragment>
@@ -12,5 +13,6 @@ export default () => (
     </Layout>
     <StyledArtists className="section hero container-fluid artists-row" />
     <StyledSpotify className="section hero container-fluid artists-row" />
+    <StyledFirstMay className="section hero container-fluid artists-row" />
   </React.Fragment>
 );
