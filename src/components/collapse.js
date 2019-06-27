@@ -23,7 +23,7 @@ class CollapseText extends React.Component {
           aria-controls="example-collapse-text"
           aria-expanded={open}
         >
-          <span>Leggi di più</span>
+          <span className="has-text-weight-normal">Leggi di più</span>
           <span class="icon is-small">
             {open ? (
               <FontAwesomeIcon icon={faAngleUp} />

@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/artists.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import Layout from "../components/layout";
 import Floating from "../components/floating";

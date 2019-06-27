@@ -28,7 +28,9 @@ const BackgroundSection = ({ className }) => (
           backgroundColor={`#040e18`}
         >
           <div className="hero-body">
-            <h1 className="wsf-grey">Il Festival</h1>
+            <h1 className="wsf-grey title has-text-weight-normal is-1">
+              Il Festival
+            </h1>
           </div>
         </BackgroundImage>
       );

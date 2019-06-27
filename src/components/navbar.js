@@ -23,7 +23,7 @@ export default () => (
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" className="wsf-grey" />
     <Navbar.Collapse id="responsive-navbar-nav">
-      <Nav className="ml-auto">
+      <Nav className="ml-auto has-text-weight-normal">
         <Nav.Link href="/" className="wsf-grey">
           Home
         </Nav.Link>
