@@ -8,7 +8,28 @@ const Artists = ({ className }) => (
   <StaticQuery
     query={graphql`
       query {
-        wsf: file(relativePath: { eq: "1.jpg" }) {
+        primo: file(relativePath: { eq: "primo.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        secondo: file(relativePath: { eq: "secondo.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        terzo: file(relativePath: { eq: "terzo.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        quarto: file(relativePath: { eq: "quarto.png" }) {
           childImageSharp {
             fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid
@@ -27,13 +48,13 @@ const Artists = ({ className }) => (
               <div className="column">
                 <figure className="image is-square has-shadow d-flex artist">
                   <Img
-                    fluid={data.wsf.childImageSharp.fluid}
+                    fluid={data.primo.childImageSharp.fluid}
                     alt="wsf-3"
                     style={{ position: "unset" }}
                   />
                   <div className="artist-name">
                     <span className="wsf-grey has-text-weight-semibold">
-                      Artista
+                      M.E.R.L.O.T & Ehyem
                     </span>
                   </div>
                 </figure>
@@ -41,13 +62,13 @@ const Artists = ({ className }) => (
               <div className="column">
                 <figure className="image is-square has-shadow d-flex artist">
                   <Img
-                    fluid={data.wsf.childImageSharp.fluid}
+                    fluid={data.secondo.childImageSharp.fluid}
                     alt="wsf-4"
                     style={{ position: "unset" }}
                   />
                   <div className="artist-name">
                     <span className="wsf-grey has-text-weight-semibold">
-                      Artista
+                      Ehm.carbo
                     </span>
                   </div>
                 </figure>
@@ -55,13 +76,13 @@ const Artists = ({ className }) => (
               <div className="column">
                 <figure className="image is-square has-shadow d-flex artist">
                   <Img
-                    fluid={data.wsf.childImageSharp.fluid}
+                    fluid={data.terzo.childImageSharp.fluid}
                     alt="wsf-4"
                     style={{ position: "unset" }}
                   />
                   <div className="artist-name">
                     <span className="wsf-grey has-text-weight-semibold">
-                      Artista
+                      Ori Gami
                     </span>
                   </div>
                 </figure>
@@ -69,13 +90,13 @@ const Artists = ({ className }) => (
               <div className="column">
                 <figure className="image is-square has-shadow d-flex artist">
                   <Img
-                    fluid={data.wsf.childImageSharp.fluid}
+                    fluid={data.quarto.childImageSharp.fluid}
                     alt="wsf-4"
                     style={{ position: "unset" }}
                   />
                   <div className="artist-name">
                     <span className="wsf-grey has-text-weight-semibold">
-                      Artista
+                      Merifiore
                     </span>
                   </div>
                 </figure>
