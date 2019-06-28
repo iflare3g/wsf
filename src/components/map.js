@@ -13,7 +13,10 @@ class Map extends Component {
         <GoogleMap
           defaultCenter={{ lat: 40.0924671, lng: 15.8073166 }}
           defaultZoom={18}
-          defaultOptions={{ mapTypeControl: false }}
+          defaultOptions={{
+            mapTypeControl: false,
+            gestureHandling: "cooperative"
+          }}
         >
           <Marker
             position={{ lat: 40.0924671, lng: 15.8073166 }}
