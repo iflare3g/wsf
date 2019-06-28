@@ -32,13 +32,57 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Wood Sound Festival`,
-        short_name: `WSF`,
-        start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
-        display: `standalone`,
-        icon: `src/pwa.png`
+        name: "Wood Sound Festival Official",
+        short_name: "Wood Sound Festival",
+        theme_color: "#d2837c",
+        background_color: "white",
+        display: "standalone",
+        orientation: "portrait",
+        Scope: "/",
+        start_url: "/",
+        icons: [
+          {
+            src: "images-pwa/icons/icon-72x72.png",
+            sizes: "72x72",
+            type: "image/png"
+          },
+          {
+            src: "images-pwa/icons/icon-96x96.png",
+            sizes: "96x96",
+            type: "image/png"
+          },
+          {
+            src: "images-pwa/icons/icon-128x128.png",
+            sizes: "128x128",
+            type: "image/png"
+          },
+          {
+            src: "images-pwa/icons/icon-144x144.png",
+            sizes: "144x144",
+            type: "image/png"
+          },
+          {
+            src: "images-pwa/icons/icon-152x152.png",
+            sizes: "152x152",
+            type: "image/png"
+          },
+          {
+            src: "images-pwa/icons/icon-192x192.png",
+            sizes: "192x192",
+            type: "image/png"
+          },
+          {
+            src: "images-pwa/icons/icon-384x384.png",
+            sizes: "384x384",
+            type: "image/png"
+          },
+          {
+            src: "images-pwa/icons/icon-512x512.png",
+            sizes: "512x512",
+            type: "image/png"
+          }
+        ],
+        splash_pages: null
       }
     },
     "gatsby-plugin-offline"
