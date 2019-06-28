@@ -28,6 +28,19 @@ module.exports = {
       options: {
         path: `${__dirname}/src/img/`
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Wood Sound Festival`,
+        short_name: `WSF`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/pwa.png`
+      }
+    },
+    "gatsby-plugin-offline"
   ]
 };
