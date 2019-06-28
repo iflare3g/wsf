@@ -110,7 +110,6 @@ const Artists = ({ className }) => (
 );
 
 const StyledArtists = styled(Artists)`
-  margin-top: 80px;
   max-width: 70vw;
 `;
 

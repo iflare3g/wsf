@@ -160,3 +160,9 @@ li {
   background-color: rgb(210, 131, 124);
   color: white !important;
 }
+
+@media (max-width: 480px) {
+  .artists-row {
+    max-width: 100vw!important;
+  }
+}
