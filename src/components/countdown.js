@@ -11,29 +11,31 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
     return <Completionist />;
   } else {
     return (
-      <Container className="py-5">
+      <Container className="py-lg-5 py-3">
         <Row className="text-center" style={{ fontSize: "3rem" }}>
           <Col lg="12">
-            <h1 className="wsf-grey">Fulminacci</h1>
-            <h5 className="wsf-red font-weight-bold">12 AGOSTO</h5>
+            <h1 className="wsf-grey is-size-1">Fulminacci</h1>
+            <h5 className="wsf-red has-text-weight-bold is-size-5">
+              12 AGOSTO
+            </h5>
           </Col>
         </Row>
         <section className="container mt-3">
-          <div className="columns is-centered">
+          <div className="columns is-centered px-lg-5 mx-lg-5">
             <div className="column wsf-red is-narrow is-2">
-              <h1>{days}</h1>
+              <h1 className="is-size-1">{days}</h1>
               <p className="font-weight-light">GIORNI</p>
             </div>
             <div className="column wsf-red is-narrow is-2">
-              <h1>{hours}</h1>
+              <h1 className="is-size-1">{hours}</h1>
               <p className="font-weight-light">ORE</p>
             </div>
             <div className="column wsf-red is-narrow is-2">
-              <h1>{minutes}</h1>
+              <h1 className="is-size-1">{minutes}</h1>
               <p className="font-weight-light">MINUTI</p>
             </div>
             <div className="column wsf-red is-narrow is-2">
-              <h1>{seconds}</h1>
+              <h1 className="is-size-1">{seconds}</h1>
               <p className="font-weight-light">SECONDI</p>
             </div>
           </div>
