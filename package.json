@@ -23,7 +23,7 @@
     "bootstrap": "^4.3.1",
     "bulma": "^0.7.5",
     "gatsby": "^2.11.6",
-    "gatsby-background-image": "^0.7.4",
+    "gatsby-background-image": "^0.7.6",
     "gatsby-cli": "^2.7.7",
     "gatsby-image": "^2.2.3",
     "gatsby-plugin-favicon": "^3.1.6",
