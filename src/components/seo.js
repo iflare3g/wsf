@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
-const SEO = ({ title, description, image, pathname, article }) => (
+const SEO = ({ title, description, og, pathname, article }) => (
   <StaticQuery
     query={query}
     render={({
@@ -12,21 +12,29 @@ const SEO = ({ title, description, image, pathname, article }) => (
           defaultTitle,
           titleTemplate,
           defaultDescription,
-          siteUrl
+          siteUrl,
+          ogImage
         }
       }
     }) => {
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        url: `${siteUrl}${pathname || "/"}`
+        url: `${siteUrl}${pathname || "/"}`,
+        og: ogImage
       };
       return (
         <>
           <Helmet title={seo.title} titleTemplate={titleTemplate}>
             <meta name="description" content={seo.description} />
+            <meta property="og:type" content="website" />
+            <meta property="og:locale" content="it_IT" />
             {seo.url && <meta property="og:url" content={seo.url} />}
             {seo.title && <meta property="og:title" content={seo.title} />}
+            {seo.og && <meta property="og:image" content={seo.og} />}
+            {seo.description && (
+              <meta property="og:description" content={seo.description} />
+            )}
           </Helmet>
         </>
       );
@@ -54,6 +62,7 @@ const query = graphql`
         titleTemplate
         defaultDescription: description
         siteUrl: url
+        ogImage: ogImage
       }
     }
   }

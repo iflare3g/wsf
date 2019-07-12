@@ -6,9 +6,11 @@ import StyledArtists from "../components/artists";
 import StyledSpotify from "../components/lazyspotify";
 import StyledFirstMay from "../components/firstmay";
 import Countdown from "../components/countdown";
+import SEO from "../components/seo";
 
 export default () => (
   <React.Fragment>
+    <SEO />
     <Layout>
       <Floating />
       <Countdown />

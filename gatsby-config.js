@@ -14,7 +14,8 @@ module.exports = {
     titleTemplate: "%s | Wood Sound Festival",
     description:
       "Il Wood Sound Festival è un inno alle cose belle della vita. Musica, Arte in tutte le sue forme, Cibo e molto altro ancora...",
-    url: "https://www.woodsoundfestival.it" // No trailing slash allowed!
+    url: "https://www.woodsoundfestival.it", // No trailing slash allowed!
+    ogImage: "https://wood-sound-festival.s3-eu-west-1.amazonaws.com/og.jpg"
   },
   plugins: [
     `gatsby-plugin-favicon`,
