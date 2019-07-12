@@ -30,10 +30,6 @@ const SEO = ({ title, description, og, pathname, article }) => (
             <meta property="og:type" content="website" />
             <meta property="og:locale" content="it_IT" />
             <meta
-              property="og:image"
-              content="http://wood-sound-festival.s3-eu-west-1.amazonaws.com/og.jpg"
-            />
-            <meta
               property="og:image:secure_url"
               content="https://wood-sound-festival.s3-eu-west-1.amazonaws.com/og.jpg"
             />
