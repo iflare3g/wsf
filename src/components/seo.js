@@ -29,12 +29,12 @@ const SEO = ({ title, description, og, pathname, article }) => (
             <meta name="description" content={seo.description} />
             <meta property="og:type" content="website" />
             <meta property="og:locale" content="it_IT" />
+            <meta
+              property="og:image"
+              content="https://wood-sound-festival.s3-eu-west-1.amazonaws.com/og.jpg"
+            />
             {seo.url && <meta property="og:url" content={seo.url} />}
             {seo.title && <meta property="og:title" content={seo.title} />}
-            {seo.og && <meta property="og:image" content={seo.og} />}
-            {seo.description && (
-              <meta property="og:description" content={seo.description} />
-            )}
           </Helmet>
         </>
       );
