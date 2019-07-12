@@ -34,7 +34,7 @@ const SEO = ({ title, description, og, pathname, article }) => (
               content="https://wood-sound-festival.s3-eu-west-1.amazonaws.com/og.jpg"
             />
             <meta
-              property="og:image:secure_url"
+              property="og:image"
               content="http://wood-sound-festival.s3-eu-west-1.amazonaws.com/og.jpg"
             />
             <meta property="og:image:type" content="image/jpeg" />
