@@ -36,6 +36,13 @@ const Artists = ({ className }) => (
             }
           }
         }
+        quinto: file(relativePath: { eq: "satoshy.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `}
     render={data => {
@@ -101,6 +108,20 @@ const Artists = ({ className }) => (
                   </div>
                 </figure>
               </div>
+              <div className="column">
+                <figure className="image is-square has-shadow d-flex artist">
+                  <Img
+                    fluid={data.quinto.childImageSharp.fluid}
+                    alt="wsf-5"
+                    style={{ position: "unset" }}
+                  />
+                  <div className="artist-name">
+                    <span className="wsf-grey has-text-weight-semibold">
+                      Satoshy & La Banda Baloon
+                    </span>
+                  </div>
+                </figure>
+              </div>
             </div>
           </div>
         </section>
@@ -110,6 +131,7 @@ const Artists = ({ className }) => (
 );
 
 const StyledArtists = styled(Artists)`
+  margin-top: 80px;
   max-width: 70vw;
 `;
 
