@@ -34,7 +34,7 @@ export default () => (
           Contatti
         </Nav.Link>
         <Nav.Link
-          href="https://www.diyticket.it/"
+          href="https://www.diyticket.it/events/Musica/2783/wood-sound-festival-biglietti"
           className="wsf-grey has-text-weight-semibold"
           target="_blank"
         >

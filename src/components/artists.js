@@ -117,7 +117,7 @@ const Artists = ({ className }) => (
                   />
                   <div className="artist-name">
                     <span className="wsf-grey has-text-weight-semibold">
-                      Satoshy & La Banda Baloon
+                      Satoshy & La Banda Balloon
                     </span>
                   </div>
                 </figure>
