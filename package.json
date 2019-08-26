@@ -16,7 +16,7 @@
     "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
-    "@fortawesome/free-brands-svg-icons": "^5.10.1",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "animate.css": "^3.7.2",
     "babel-plugin-styled-components": "^1.10.6",
