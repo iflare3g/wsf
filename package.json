@@ -30,7 +30,7 @@
     "gatsby-background-image": "^0.8.15",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-manifest": "^2.2.22",
-    "gatsby-plugin-react-helmet": "^3.1.12",
+    "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-sharp": "^2.2.30",
     "gatsby-plugin-offline": "^3.0.14",
     "gatsby-plugin-sass": "^2.1.18",
