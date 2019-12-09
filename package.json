@@ -25,21 +25,21 @@
     "gatsby": "^2.15.29",
     "gatsby-cli": "^2.7.26",
     "gatsby-background-image": "^0.8.2",
-    "gatsby-image": "^2.2.29",
+    "gatsby-image": "^2.2.34",
     "gatsby-cli": "^2.8.5",
     "gatsby-background-image": "^0.8.15",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-manifest": "^2.2.23",
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-sharp": "^2.2.32",
-    "gatsby-plugin-offline": "^3.0.16",
-    "gatsby-plugin-sass": "^2.1.20",
+    "gatsby-plugin-offline": "^3.0.27",
+    "gatsby-plugin-sass": "^2.1.24",
     "gatsby-transformer-sharp": "^2.3.7",
-    "gatsby-plugin-styled-components": "^3.1.11",
+    "gatsby-plugin-styled-components": "^3.1.14",
     "gatsby-source-filesystem": "^2.1.28",
     "jquery": "^3.4.1",
-    "node-sass": "^4.12.0",
-    "react": "^16.10.2",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-countdown-now": "^2.1.1",
     "react-dom": "^16.10.2",
@@ -50,7 +50,7 @@
     "uninstall": "0.0.0"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.19.1"
   },
   "repository": {
     "type": "git",
