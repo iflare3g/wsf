@@ -46,7 +46,7 @@
     "react-google-maps": "^9.4.5",
     "react-helmet": "^5.2.1",
     "react-spinkit": "^3.0.0",
-    "styled-components": "^4.4.0",
+    "styled-components": "^4.4.1",
     "uninstall": "0.0.0"
   },
   "devDependencies": {
