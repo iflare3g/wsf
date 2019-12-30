@@ -21,7 +21,7 @@
     "animate.css": "^3.7.2",
     "babel-plugin-styled-components": "^1.10.6",
     "bootstrap": "^4.3.1",
-    "bulma": "^0.7.5",
+    "bulma": "^0.8.0",
     "gatsby": "^2.15.29",
     "gatsby-cli": "^2.7.26",
     "gatsby-background-image": "^0.8.2",
