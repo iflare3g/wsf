@@ -49,7 +49,7 @@ const Artists = ({ className }) => (
       return (
         <section className={className}>
           <div className="hero-body has-text-left">
-            <h1 className="title is-1 wsf-grey">Artisti</h1>
+            <h1 className="title is-1 wsf-grey">Artisti edizione 2019</h1>
             <div className="space-divider has-shadow" />
             <div className="columns is-8 mt-4">
               <div className="column">
@@ -131,7 +131,6 @@ const Artists = ({ className }) => (
 );
 
 const StyledArtists = styled(Artists)`
-  margin-top: 80px;
   max-width: 70vw;
 `;
 

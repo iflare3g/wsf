@@ -8,7 +8,7 @@ const Completionist = () => (
   <Container className="py-lg-5 py-3">
     <Row className="text-center" style={{ fontSize: "3rem" }}>
       <Col lg="12">
-        <h1 className="wsf-grey is-size-1">Fulminacci</h1>
+        <h1 className="wsf-grey is-size-1">Wood Sound Festival Sunset Edition 2020</h1>
         <h5 className="wsf-red has-text-weight-bold is-size-1 animated pulse infinite">
           It's time!
         </h5>
@@ -28,9 +28,9 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
       <Container className="py-lg-5 py-3">
         <Row className="text-center" style={{ fontSize: "3rem" }}>
           <Col lg="12">
-            <h1 className="wsf-grey is-size-1">Fulminacci</h1>
+            <h1 className="wsf-grey is-size-1">Wood Sound Festival Sunset Edition</h1>
             <h5 className="wsf-red has-text-weight-bold is-size-5">
-              12 AGOSTO
+              28 AGOSTO H18:00
             </h5>
           </Col>
         </Row>
@@ -60,5 +60,5 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 };
 
 export default () => (
-  <Countdown date={new Date(2019, 7, 12, 19, 0, 0)} renderer={renderer} />
+  <Countdown date={new Date(2020, 7, 28, 18, 0, 0)} renderer={renderer} />
 );
