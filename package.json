@@ -32,7 +32,7 @@
     "gatsby-plugin-sharp": "^2.6.27",
     "gatsby-plugin-offline": "^3.0.30",
     "gatsby-plugin-sass": "^2.3.12",
-    "gatsby-transformer-sharp": "^2.3.7",
+    "gatsby-transformer-sharp": "^2.5.13",
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-source-filesystem": "^2.1.43",
     "jquery": "^3.5.0",
