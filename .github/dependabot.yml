@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: gatsby-plugin-offline
+    versions:
+    - 3.10.0
+    - 3.10.1
+    - 3.9.0
+  - dependency-name: gatsby-source-filesystem
+    versions:
+    - 2.10.0
+    - 2.11.0
+    - 2.9.1
+  - dependency-name: gatsby-transformer-sharp
+    versions:
+    - 2.11.0
+    - 2.12.0
+  - dependency-name: styled-components
+    versions:
+    - 5.2.1
+  - dependency-name: bulma
+    versions:
+    - 0.9.1
