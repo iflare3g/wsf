@@ -1,20 +1,22 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
-import Layout from "../components/layout";
-import StyledArtists from "../components/artists";
-import StyledSpotify from "../components/lazyspotify";
-import StyledFirstMay from "../components/firstmay";
-import Countdown from "../components/countdown";
-import SEO from "../components/seo";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import App from '../components/App';
+import { headData } from '../mock/data';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style/main.scss';
 
-export default () => (
-  <React.Fragment>
-    <SEO />
-    <Layout>
-      <Countdown />
-    </Layout>
-    <StyledArtists className="section hero container-fluid artists-row" />
-    <StyledSpotify className="section hero container-fluid artists-row" />
-    <StyledFirstMay className="section hero container-fluid artists-row" />
-  </React.Fragment>
-);
+export default () => {
+  const { title, lang, description } = headData;
+
+  return (
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title || 'Gatsby Simplefolio'}</title>
+        <html lang={lang || 'it'} />
+        <meta name="description" content={description || 'Wood Sound Festival'} />
+      </Helmet>
+      <App />
+    </>
+  );
+};
