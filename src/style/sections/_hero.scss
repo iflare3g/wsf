@@ -1,0 +1,89 @@
+#hero {
+  width: 100%;
+  min-height: 100vh;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  font-weight: 600;
+  color: $wsf-yellow;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: url("../images/vicario-laptop.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  @include respond(tab-land) {
+    padding: 0rem $default-font-size;
+    background: url("../images/vicario-tablet.jpg") no-repeat center center;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+  }
+
+  @include respond(tab-port) {
+    padding: 0rem $default-font-size;
+    background: url("../images/600x800-vicario.jpg") no-repeat center center;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+  }
+
+  @include respond(phone) {
+    padding: 0rem $default-font-size;
+    background: url("../images/vicario-mobile.jpg") no-repeat center center;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  }
+
+  @include respond(phone-xs) {
+    padding: 0rem $default-font-size;
+    background: url("../images/vicario-mobile.jpg") no-repeat center center;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  }
+
+  // If you want to set a background image on the hero section, uncomment these with yout custom image
+
+  /* background: url("/src/assets/[your-image].png");
+  background-position: center;
+  background-size: cover; */
+
+  .hero-title {
+    font-size: 5.6rem;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+    text-align: left;
+    background: #ea00df;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+//.hero-container {
+//  background-size: cover!important;
+//  background: url("../images/vicario-laptop.jpg") no-repeat center;
+//  z-index: 100;
+//}

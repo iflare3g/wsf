@@ -1,7 +1,6 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.woodsoundfestival.site">
-    <img alt="Gatsby" src="http://woodsoundfestival.site/wp-content/uploads/2017/07/Senza-titolo-4-01.png" width="60" />
+  <a href="https://woodsoundfestival.it">
+    <img alt="WSF Logo" src="src/images/LOGO.svg" width="100" />
   </a>
 </p>
 <h1 align="center">
