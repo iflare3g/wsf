@@ -1,0 +1,32 @@
+#contact {
+  background-color: $wsf-yellow;
+  padding: 15rem 0 10rem 0;
+  margin-top: -15rem;
+  margin-bottom: -1px;
+  color: $white-color;
+
+  @include respond(tab-land) {
+    padding: 10rem 0;
+    margin-top: 0;
+  }
+
+  .contact-wrapper {
+    margin-top: 3.2rem;
+    padding: 0 2rem;
+    backface-visibility: hidden;
+
+    &__text {
+      margin-bottom: 2.5rem;
+    }
+
+    &__text,
+    a {
+      font-size: 2.4rem;
+
+      // Responsive for contact text
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
