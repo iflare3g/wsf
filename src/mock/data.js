@@ -37,6 +37,11 @@ export const artistsData = [
     img: 'henna-line-up.jpg',
     info: 'Henna',
   },
+  {
+    id: nanoid(),
+    img: 'max.jpg',
+    info: 'Massimo Cantisani',
+  },
 ];
 
 // PROJECTS DATA

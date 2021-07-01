@@ -2,7 +2,7 @@
   "name": "wood-sound-festival",
   "private": true,
   "description": "Wood Sound Festival Official Website",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "scripts": {
     "build": "gatsby-simplefolio/node_modules/.bin/gatsby build",
