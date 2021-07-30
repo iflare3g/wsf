@@ -42,6 +42,11 @@ export const artistsData = [
     img: 'max.jpg',
     info: 'Massimo Cantisani',
   },
+  {
+    id: nanoid(),
+    img: 'angelina.png',
+    info: 'Angelina Mango',
+  },
 ];
 
 // PROJECTS DATA
