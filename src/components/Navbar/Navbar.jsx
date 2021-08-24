@@ -4,7 +4,7 @@ import { scroller } from 'react-scroll';
 import logo from '../../images/LOGO.svg';
 
 const NavBar = () => (
-  <Navbar expand="xl" className="p-4 shadow-lg wsf-bg-dark-blue" collapseOnSelect>
+  <Navbar expand="xl" variant="dark" className="p-4 shadow-lg wsf-bg-dark-blue" collapseOnSelect>
     <Navbar.Brand href="#home">
       <img src={logo} alt="WSF Logo" id="logo" />
     </Navbar.Brand>
