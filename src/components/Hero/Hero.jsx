@@ -45,7 +45,7 @@ const Header = () => {
               marginBottom="margin-bottom-0"
             />
             <h3 className="section-subtitle text-white">
-              Parco Fossatello Lagonegro ( PZ ) ore 12:00
+              Parco Fossatello Lagonegro ( PZ ) ore 18:00
             </h3>
           </Col>
         </Row>
