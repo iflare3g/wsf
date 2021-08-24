@@ -30,7 +30,7 @@ a:hover {
   text-transform: uppercase;
 
   @include respond(phone) {
-    font-size: 2.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -42,7 +42,7 @@ a:hover {
   text-transform: uppercase;
 
   @include respond(phone) {
-    font-size: 2.8rem;
+    font-size: 1.6rem;
   }
 }
 
