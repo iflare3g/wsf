@@ -4,7 +4,7 @@ import { scroller } from 'react-scroll';
 import logo from '../../images/LOGO.svg';
 
 const NavBar = () => (
-  <Navbar expand="xl" className="p-4 shadow-lg wsf-bg-yellow" collapseOnSelect>
+  <Navbar expand="xl" className="p-4 shadow-lg wsf-bg-dark-blue" collapseOnSelect>
     <Navbar.Brand href="#home">
       <img src={logo} alt="WSF Logo" id="logo" />
     </Navbar.Brand>
@@ -15,7 +15,7 @@ const NavBar = () => (
           Home
         </Nav.Link>
         <Nav.Link
-          href="https://www.diyticket.it/events/Musica/4785/wood-sound-festival-biglietti"
+          href="https://www.diyticket.it/events/Musica/5240/wood-sound-festival-joan-thiele-merlot-delga-novecento"
           className="navbar-link wsf-magenta"
           rel="noopener noreferrer"
           target="_blank"

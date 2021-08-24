@@ -19,33 +19,13 @@ export const heroData = {
 export const artistsData = [
   {
     id: nanoid(),
-    img: 'vicario-line-up.jpg',
-    info: 'Margherita Vicario',
+    img: 'wsf-lagonegro-guest.jpg',
+    info: 'Joan Thiele',
   },
   {
     id: nanoid(),
     img: 'merlot.jpg',
-    info: 'M.E.R.L.O.T',
-  },
-  {
-    id: nanoid(),
-    img: 'hu-lineup.jpg',
-    info: 'Hu',
-  },
-  {
-    id: nanoid(),
-    img: 'henna-line-up.jpg',
-    info: 'Henna',
-  },
-  {
-    id: nanoid(),
-    img: 'max.jpg',
-    info: 'Massimo Cantisani',
-  },
-  {
-    id: nanoid(),
-    img: 'angelina.png',
-    info: 'Angelina Mango',
+    info: 'Merlot',
   },
 ];
 
