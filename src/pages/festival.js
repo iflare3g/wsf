@@ -5,7 +5,7 @@ import { headData } from '../mock/data';
 import NavBar from '../components/Navbar/Navbar';
 import '../style/main.scss';
 
-export default () => {
+const Festival = () => {
   const { title, lang, description } = headData;
 
   return (
@@ -23,3 +23,5 @@ export default () => {
     </>
   );
 };
+
+export default Festival;

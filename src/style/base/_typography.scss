@@ -34,6 +34,18 @@ a:hover {
   }
 }
 
+.section-subtitle {
+  margin: 0px;
+  margin-bottom: 4.5rem;
+  font-size: $mid-font-size;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 2.8rem;
+  }
+}
+
 .dark-blue-text {
   color: $dark-blue-text !important;
 }
@@ -61,7 +73,7 @@ a:hover {
   font-weight: 600;
 
   &:hover {
-    color: black!important;
+    color: $wsf-yellow!important;
   }
 
   & > i {
@@ -70,7 +82,7 @@ a:hover {
   }
 
   & > i:hover {
-    color: black;
+    color: $wsf-yellow!important;
   }
 }
 
@@ -82,6 +94,22 @@ a:hover {
   color: $wsf-magenta!important;
 }
 
-.wsf-bg-yellow {
-  background-color: $wsf-yellow!important;
+.wsf-dark-blue {
+  color: $wsf-dark-blue!important;
+}
+
+.wsf-quite-dark-blue {
+  color: $wsf-quite-dark-blue!important;
+}
+
+.wsf-bg-dark-blue {
+  background-color: $wsf-dark-blue!important;
+}
+
+.wsf-bg-quite-dark-blue {
+  background-color: $wsf-quite-dark-blue!important;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0;
 }
