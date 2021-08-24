@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { headData } from '../mock/data';
 import '../style/main.scss';
 
-export default () => {
+const FourZeroFourPage = () => {
   const { lang } = headData;
 
   return (
@@ -41,3 +41,5 @@ export default () => {
     </>
   );
 };
+
+export default FourZeroFourPage;
